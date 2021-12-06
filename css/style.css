@@ -428,7 +428,7 @@ section {
     padding: 40px 0;
 }
 .about-us .slider .slide.slick-current {
-    padding: 0 80px;
+    /* padding: 40px 80px; */
 }
 .about-us .slider .slide-wrapper {
     box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
