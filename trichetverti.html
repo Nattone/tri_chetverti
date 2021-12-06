@@ -1,0 +1,363 @@
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header class="header container">
+        <a class="logo" href="/">
+            <img class="logo__img" src="./images/logo.png" alt="logo">
+        </a>
+        <div class="menu">
+            <a href="#about-us" class="item">О нас</a>
+            <a href="#" class="item active">Курсы</a>
+            <a href="#price" class="item">Цены</a>
+            <a href="#" class="item">Расписание</a>
+            <a href="#teachers" class="item">Преподаватели</a>
+            <a href="#contacts" class="item">Контакты</a>
+        </div>
+        <div class="links">
+            <a href="profile.html" class="profile">
+                <img src="./images/icon-profile.svg" alt="icon-profile">
+            </a>
+            <a href="#" class="feedback">
+                <img src="./images/icon-phone.svg" alt="icon-phone">
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="wrapper">
+                <h1 class="title"><span class="accented">Онлайн</span>-обучение игры на гитаре</h1>
+                <p class="subtitle">у практикующих преподавателей Москвы</p>
+                <button class="btn banner__btn" type="submit">Записаться на занятие</button>
+            </div>
+        </div>
+    </section>
+    <section class="lessons container">
+        <h2 class="title">Как проходят занятия</h2>
+        <div class="cols">
+            <div class="left">
+                <p class="text">Многие дети бросают обучение из-за академического стиля преподавания и скучной
+                    программы. В
+                    нашей же
+                    Школе музыки используются современные программы игры на гитаре, которые предполагают принципиально
+                    иной
+                    подход к освоению навыков.
+                    В их основе авторская методика, разработанная основателем Школы «Три Четверти». Используем
+                    собственные
+                    учебники и методические материалы.</p>
+                <button class="btn" type="submit">Хочу на занятие!</button>
+            </div>
+            <div class="right">
+                <div class="video__wrapper">
+                    <video class="video" src="./images/test-video.mov"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages container">
+        <h2 class="title">Преимущества</h2>
+        <ul class="cards">
+            <li class="item">
+                <p class="number">1</p>
+                <p class="text">внимание, память и ловкость</p>
+            </li>
+            <li class="item">
+                <p class="number">2</p>
+                <p class="text">волевой характер – у ребенка<br />формируются лидерские качества</p>
+            </li>
+            <li class="item">
+                <p class="number">3</p>
+                <p class="text">абстрактное мышление, <br />а также математические способности</p>
+            </li>
+            <li class="item">
+                <p class="number">4</p>
+                <p class="text">уверенность, что очень важно <br />при публичных выступлениях</p>
+            </li>
+            <li class="item">
+                <p class="number">5</p>
+                <p class="text">умение анализировать <br />и систематизировать информацию</p>
+            </li>
+        </ul>
+    </section>
+    <section class="price container" id="price">
+        <h2 class="title">Наши цены</h2>
+        <ul class="cards">
+            <li class="item action">
+                <h3 class="title">Пробное</h3>
+                <ul class="price__item__list">
+                    <li>1 занятие 30 минут</li>
+                    <li>Индивидуально</li>
+                    <li>От 7лет</li>
+                </ul>
+                <div class="cost__wrapper">
+                    <span class="cost">500₽</span>
+                    <button class="btn-small" type="submit">Подробнее</button>
+                </div>
+            </li>
+            <li class="item">
+                <h3 class="title">Абонемент<br />4 занятия</h3>
+                <ul class="price__item__list">
+                    <li>1 занятие 30 минут</li>
+                    <li>Индивидуально</li>
+                    <li>От 7лет</li>
+                </ul>
+                <div class="cost__wrapper">
+                    <span class="cost">2 500₽</span>
+                    <button class="btn-small" type="submit">Подробнее</button>
+                    <!-- переделать button в ссылку
+                    type="submit" добавить в баттоны
+                     -->
+                </div>
+            </li>
+            <li class="item">
+                <h3 class="title">Абонемент<br />8 занятий</h3>
+                <ul class="price__item__list">
+                    <li>1 занятие 30 минут</li>
+                    <li>Индивидуально</li>
+                    <li>От 7лет</li>
+                </ul>
+                <div class="cost__wrapper">
+                    <span class="cost">5 000₽</span>
+                    <button class="btn-small" type="submit">Подробнее</button>
+                </div>
+            </li>
+        </ul>
+        <button class="btn">Оставить заявку</button>
+    </section>
+    <section class="about-us" id="about-us">
+        <div class="slider">
+            <div class="slide container">
+                <h2 class="title">О нас</h2>
+                <div class="cols">
+                    <div class="left">
+                        <p>Преподавательский состав нашей Школы – это настоящие энтузиасты своего дела, которые влюблены
+                            в живопись, музыку и литературу. Помимо любви к своему делу, эти люди демонстрируют высокий
+                            уровень профессионализма, что позволяет обучать и других людей музыке, привнося элементы
+                            творчества в их повседневную жизнь.</p>
+                    </div>
+                    <div class="right">
+                        <img src="./images/test-img.jpg" alt="фото">
+                    </div>
+                </div>
+            </div>
+            <div class="slide container">
+                <h2 class="title">О нас</h2>
+                <div class="cols">
+                    <div class="left">
+                        <p>Преподавательский состав нашей Школы – это настоящие энтузиасты своего дела, которые влюблены
+                            в живопись, музыку и литературу. Помимо любви к своему делу, эти люди демонстрируют высокий
+                            уровень профессионализма, что позволяет обучать и других людей музыке, привнося элементы
+                            творчества в их повседневную жизнь.</p>
+                    </div>
+                    <div class="right">
+                        <img src="./images/test-img2.jpg" alt="фото">
+                    </div>
+                </div>
+            </div>
+            <div class="nav container">
+                <div class="prev"></div>
+                <div class="next"></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="results">
+        <h2 class="title">Результаты наших учеников</h2>
+        <ul class="slider">
+            <li class="item">
+                <div class="video__wrapper">
+                    <video src="./images/test-video.mov"></video>
+                </div>
+                <p class="description">Миша, 12 лет</p>
+            </li>
+            <li class="item">
+                <div class="video__wrapper">
+                    <video src="./images/test-video.mov"></video>
+                </div>
+                <p class="description">Миша, 12 лет</p>
+            </li>
+            <li class="item">
+                <div class="video__wrapper">
+                    <video src="./images/test-video.mov"></video>
+                </div>
+                <p class="description">Миша, 12 лет</p>
+            </li>
+        </ul>
+        <div class="nav">
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+    </section>
+    <section class="teachers container" id="teachers">
+        <h2 class="title">Наши преподаватели</h2>
+        <div class="cards cards-small">
+            <div class="item">
+                <div class="image__wrapper">
+                    <img class="" src="./images/teachers__img.png" alt="teacher">
+                </div>
+                <div class="text__wrapper">
+                    <h3 class="subtitle">Чубаров Антон Альбертович</h3>
+                    <ul>
+                        <li>Работает со взрослыми и детьми</li>
+                        <li>Гитара, укулеле, электрогитара, бас-гитара</li>
+                        <li>От классики до рока</li>
+                        <li>Стаж 10 лет</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image__wrapper">
+                    <img class="" src="./images/teachers__img.png" alt="teacher">
+                </div>
+                <div class="text__wrapper">
+                    <h3 class="subtitle">Чубаров Антон Альбертович</h3>
+                    <ul>
+                        <li>Работает со взрослыми и детьми</li>
+                        <li>Гитара, укулеле, электрогитара, бас-гитара</li>
+                        <li>От классики до рока</li>
+                        <li>Стаж 10 лет</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image__wrapper">
+                    <img class="" src="./images/teachers__img.png" alt="teacher">
+                </div>
+                <div class="text__wrapper">
+                    <h3 class="subtitle">Чубаров Антон Альбертович</h3>
+                    <ul>
+                        <li>Работает со взрослыми и детьми</li>
+                        <li>Гитара, укулеле, электрогитара, бас-гитара</li>
+                        <li>От классики до рока</li>
+                        <li>Стаж 10 лет</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form form-guitar container">
+        <div class="content">
+            <h2 class="title">Записаться на пробное занятие</h2>
+            <p class="text">Заполните форму и мы перезвоним вам в течение 5 минут</p>
+            <form action="#" method="post">
+                <label><input type="text" name="name" placeholder="Введите имя"></label>
+                <label><input type="tel" name="phone" placeholder="Введите телефон"></label>
+                <button class="btn-small" type="submit">Отправить</button>
+                <label class="checkbox"><input type="checkbox">Я даю согласие на обработку моих персональных данных и
+                    принимаю условия политики конфиденциальности</label>
+            </form>
+        </div>
+    </section>
+    <section class="about-schools container">
+        <!-- add class name -->
+        <h2 class="title">О музыкальных школах</h2>
+        <p class="text text-first">«Три Четверти» — это не просто кружок по интересам, а полноценное образовательное
+            учреждение.
+            В основе наших программ лежат современные стандарты музыкального образования,
+            которые включают в себя:</p>
+        <div class="cards">
+            <div class="item">
+                <img src="./images/test-img.jpg" alt="">
+                <h3 class="subtitle">Специальность</h3>
+                <p>(основной музыкальный инструмент)</p>
+            </div>
+            <div class="item">
+                <img src="./images/test-img.jpg" alt="">
+                <h3 class="subtitle">Пение</h3>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="./images/test-img.jpg" alt="">
+                <h3 class="subtitle">Сольфеджио</h3>
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="./images/test-img.jpg" alt="">
+                <h3 class="subtitle">Прослушивание музыки</h3>
+                <p></p>
+            </div>
+        </div>
+        <p class="text text-second">Мы прекрасно понимаем, насколько важна атмосфера, окружающая обучающий процесс,
+            поэтому
+            сделали все
+            возможное, чтобы уроки не были скучными, и Вам не пришлось зубрить нудную теорию. Все необходимые знания и
+            навыки наши студенты получают через практические занятия – именно такой подход мы считаем правильным.</p>
+        <button class="btn" type="submit">Хочу на занятие!</button>
+    </section>
+    <section class="contacts" id="contacts">
+        <h2 class="title">Контакты</h2>
+        <div class="left"></div>
+        <div class="right"></div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="menu">
+                    <a href="#" class="item">Гитара</a>
+                    <a href="#" class="item">Вокал</a>
+                    <a href="#" class="item">Клавишные</a>
+                    <a href="#" class="item">Рисование</a>
+                    <a href="#" class="item">Скрипка</a>
+                    <a href="#" class="item">Раннее развитие</a>
+                    <a href="#" class="item active">Духовые</a>
+                    <a href="#" class="item">Ударные</a>
+                    <a href="#" class="item">Разное</a>
+                </div>
+            </div>
+            <div class="footer__middle">
+                <div class="social">
+                    <h3 class="subtitle">Мы в соцсетях:</h3>
+                    <a href="#" class="youtube">
+                        <img src="./images/icon-youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#" class="instagram">
+                        <img src="./images/icon-instagram.svg" alt="instagram">
+                    </a>
+                </div>
+                <img src="./images/logo-white.png" alt="logo" class="logo">
+                <div class="contacts">
+                    <div class="phone">
+                        <a class="link" href="tel:+74997305040">
+                            <img src="./images/icon-phone.svg" alt="phone">
+                            +7 (499) 730-50-40</a>
+                        <a class="link" href="tel:+79175524888">+7 (917) 55-24-888</a>
+                    </div>
+                    <div class="email">
+                        <a class="link" href="mailto:welcome@trichetverti.ru">
+                            <img src="./images/icon-mail.svg" alt="email">
+                            welcome@trichetverti.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="left">
+                    <div class="links">
+                        <a href="#">Договор-оферта</a>
+                        <a href="#">Лицензия</a>
+                    </div>
+                    <p class="copyright">© 2017-2021 Три Четверти | Школа музыки и свободного творчества</p>
+                </div>
+                <div class="right">
+                    <p class="text">Вся информация, размещенная на сайте trichetverti.ru, охраняется в соответствии с
+                        законодательством об авторском праве. Запрещается ее использование в любой форме без письменного
+                        разрешения ИП Андрюшенковой А.С.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
