@@ -320,6 +320,9 @@ section {
 
 /* *** */
 
+.price {
+    margin-bottom: 130px;
+}
 .price .title {
     margin-bottom: 60px;
 }
@@ -422,7 +425,10 @@ section {
 }
 .about-us .slider .slide {
     height: auto;
-    max-width: 1200px;
+    padding: 40px 0;
+}
+.about-us .slider .slide.slick-current {
+    padding: 0 80px;
 }
 .about-us .slider .slide-wrapper {
     box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
