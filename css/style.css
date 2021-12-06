@@ -161,7 +161,7 @@ section {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 50px 15px;
     align-items: center;
     z-index: 2;
     position: absolute;
@@ -445,7 +445,7 @@ section {
     margin-bottom: 60px;
 }
 .results .slider {
-    display: flex;
+    /* display: flex; */
 }
 .results .item {}
 .results .video__wrapper {
@@ -605,6 +605,7 @@ section {
 
 .about-schools .cards {
     margin-bottom: 60px;
+    justify-content: space-between;
 }
 .about-schools .title {
     margin-bottom: 48px;
@@ -622,8 +623,9 @@ section {
 }
 .about-schools .item {
     width: 25%;
+    width: calc(25% - 36px);
     position: relative;
-    padding: 146px 36px 42px;
+    padding: 146px 0 42px;
     text-align: center;
     color: #603009;
 }
@@ -725,3 +727,8 @@ section {
 }
 /* Добавить класс для конкретной стр, чтоб отделить, например, cards от всего сайта.
 добавить доп.класс для стилей с жёлтым/зелёным цветом */
+
+
+@media (max-width: 1199px) {
+
+}
