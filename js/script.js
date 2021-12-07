@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     //play on video
-    $(document).on('click', '.video__wrapper', function () {
+    $(document).on('click', '.video-wrapper', function () {
         const video = $(this).children('video')[0];
         if ($(this).hasClass('play')) {
             video.pause();
@@ -10,6 +10,7 @@ $(document).ready(function () {
         }
         $(this).toggleClass('play');
     });
+
 
     // slick slider 
     $('.about-us .slider').slick({
