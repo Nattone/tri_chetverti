@@ -106,7 +106,7 @@ section {
     max-width: 31%;
     margin: 0 1%;
 }
-.video__wrapper {
+.video-wrapper {
     position: relative;
     cursor: pointer;
 }
@@ -114,26 +114,26 @@ section {
     display: block;
 }
 /* onclick display none */
-.video__wrapper::before,
-.video__wrapper::after {
+.video-wrapper::before,
+.video-wrapper::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.video__wrapper.play::before,
-.video__wrapper.play::after {
+.video-wrapper.play::before,
+.video-wrapper.play::after {
     display: none;
 }
-.video__wrapper::before {
+.video-wrapper::before {
     background-image: url(../images/video-play.svg);
     background-repeat: no-repeat;
     width: 25px;
     height: 29px;
     z-index: 5;
 }
-.video__wrapper::after {
+.video-wrapper::after {
     width: 90px;
     height: 90px;
     background: linear-gradient(0deg, #8BB3E0, #8BB3E0), #8CB5E2;
@@ -142,20 +142,17 @@ section {
     border-radius: 100%;
     transition: opacity .3s ease;
 }
-.video__wrapper:hover::after {
+.video-wrapper:hover::after {
     opacity: 1;
 }
 /* onclick bg-color: background: #709BCB; */
 
-/* Убрать потом */
+
 .container {
     max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
-/* это ^ */
 
 
 .header {
@@ -173,7 +170,7 @@ section {
     width: 185px;
     height: 52px;
 }
-.header .logo__img {
+.header .logo-img {
     width: 185px;
     height: 52px;
 }
@@ -234,10 +231,10 @@ section {
     transform: translateY(-50%);
     position: absolute;
 }
-.banner__btn {
+.banner-btn {
     position: relative;
 }
-.banner__btn::before {
+.banner-btn::before {
     content: '';
     position: absolute;
     display: block;
@@ -352,7 +349,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
 }
-.price .item.action::before {
+.price .item.acented::before {
     background-color: #fDB49A;
 }
 .price .item:first-of-type::before {
@@ -373,19 +370,19 @@ section {
     margin-bottom: 25px;
     width: 100%;
 }
-.price .price__item__list {
+.price .price-item-list {
     /* change class name */
     margin-bottom: 10px;
     width: 100%;
 }
-.price .price__item__list li {
+.price .price-item-list li {
     /* add class name */
     margin-bottom: 18px;
     font-size: 25px;
     line-height: 34px;
     color: #40230e;
 }
-.price .cost__wrapper {
+.price .cost-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -405,6 +402,40 @@ section {
 }
 
 /* *** */
+
+.action {}
+.action .title {
+    margin-bottom: 60px;
+}
+.action .cols {
+    display: flex;
+    box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
+    border-radius: 30px;
+}
+.action .left,
+.action .right {
+    width: 50%;
+}
+.action .left {
+    padding: 55px 45px 152px 70px;
+    position: relative;
+}
+.action .btn {
+    position: absolute;
+    left: 70px;
+    bottom: 45px;
+}
+.action img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+
+/* *** */
+
 
 .about-us .cols {
     display: flex;
@@ -458,7 +489,7 @@ section {
     /* display: flex; */
 }
 .results .item {}
-.results .video__wrapper {
+.results .video-wrapper {
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 30px;
@@ -485,7 +516,7 @@ section {
 .teachers .item + .item {
     margin-left: 20px;
 } */
-.teachers .image__wrapper {
+.teachers .image-wrapper {
     /* add class name */
     background-color: #a6cee6;
     height: 280px;
@@ -493,14 +524,14 @@ section {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
-.teachers img {
+.teachers .teachers-img {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     max-width: 100%;
 }
-.teachers .text__wrapper {
+.teachers .text-wrapper {
     padding: 20px 44px 28px;
 }
 .teachers .cards .subtitle {
@@ -716,7 +747,7 @@ section {
 .footer .menu .item:hover::before {
     background-color: #fff;
 }
-.footer__middle {
+.footer-middle {
     display: flex;
     justify-content: space-between;
 }
@@ -744,7 +775,7 @@ section {
 .footer .phone {
     margin-bottom: 4px;
 }
-.footer__bottom {
+.footer-bottom {
     padding: 26px 0 36px;
     display: flex;
 }
@@ -773,6 +804,30 @@ section {
 добавить доп.класс для стилей с жёлтым/зелёным цветом */
 
 
+
+/* Landscape tablets and medium desktops */
 @media (max-width: 1199px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+/* extra small */
+@media (max-width: 320px) {
 
 }
