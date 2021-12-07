@@ -161,12 +161,30 @@ section.container {
 	box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
 	width: 63px;
 	height: 63px;
-	background-color: #fff;
+	background-color: #fefefd;
 	border: none;
 	border-radius: 100%;
 	z-index: 1;
     cursor: pointer;
 	font-size: 0;
+    transition: all .3s ease;
+}
+.slick-arrow:hover,
+.slick-arrow:focus {
+	box-shadow: 0px 6px 6px rgba(131, 177, 205, 0.25);
+}
+.slick-arrow::before {
+    content: '';
+    background-image: url(../images/icon-arrow.svg);
+    width: 16px;
+    height: 27px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.slick-next::before {
+    transform: translate(-50%, -50%), rotate(180deg);
 }
 
 
@@ -523,6 +541,15 @@ section.container {
 }
 .results .slider {
 	padding-bottom: 80px;
+}
+.results .slick-arrow {
+    bottom: 0;
+}
+.results .slick-prev {
+    left: calc(50% + 506px);
+}
+.results .slick-next {
+    left: calc(50% + 594px);
 }
 .results .item {
     padding: 0 20px;
