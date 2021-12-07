@@ -150,6 +150,10 @@ section.container {
 .video-wrapper:hover::after {
     opacity: 1;
 }
+.video-wrapper:focus::after {
+    background: #709bcb;
+
+}
 /* onclick bg-color: background: #709BCB; */
 
 .slick-arrow {
@@ -237,6 +241,7 @@ section.container {
     position: relative;
     z-index: 0;
     min-height: 720px;
+    margin-bottom: 0;
 }
 .banner .wrapper {
     width: 60%;
@@ -293,6 +298,9 @@ section.container {
 
 /* advantages */
 
+.advantages.container {
+    margin-bottom: 60px;
+}
 .advantages .title {
     margin-bottom: 142px;
 }
@@ -302,6 +310,8 @@ section.container {
     padding: 30px;
     margin: 0 1.65%;
     margin-bottom: 110px;
+    display: flex;
+    align-items: center;
 }
 .advantages .item .number {
     position: absolute;
@@ -330,7 +340,7 @@ section.container {
 
 /* price */
 
-.price {
+.price.container {
     margin-bottom: 130px;
 }
 .price .title {
@@ -416,7 +426,6 @@ section.container {
 
 /* action */
 
-.action {}
 .action .title {
     margin-bottom: 60px;
 }
@@ -506,7 +515,6 @@ section.container {
 
 /* results */
 
-.results {}
 .results .title {
     margin-bottom: 60px;
 }
@@ -534,8 +542,8 @@ section.container {
 
 /* teachers */
 
-.teachers {
-    /* margin-bottom: 224px; */
+.teachers.container {
+    margin-bottom: 224px;
 }
 .teachers .title {
     margin-bottom: 116px;
@@ -696,8 +704,12 @@ section.container {
     width: calc(25% - 36px);
     position: relative;
     padding: 146px 0 42px;
-    text-align: center;
     color: #603009;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .about-schools img {
     /* add class name */
@@ -721,6 +733,9 @@ section.container {
 }
 
 /* contacts */
+.contacts.container {
+    margin-bottom: 100px;
+}
 .contacts .title {
     margin-bottom: 34px;
 }
@@ -839,11 +854,99 @@ section.container {
     .container {
         max-width: 100%;
     }
+    .banner {
+        background-position-x: 350px;
+        height: auto;
+    }
+    .lessons,
+    .form {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
 }
+/* @media (min-width: 992px) and (max-width: 1199px) {
+    .banner {
+        background-position-x: 350px;
+    }
+} */
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
-
+    section,
+    section.container {
+        margin-bottom: 40px;
+    }
+    .banner::before {
+        content: '';
+        background-color: #fff;
+        opacity: 0.5;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .banner .wrapper {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .lessons .cols {
+        flex-direction: column;
+    }
+    .lessons .btn {
+        margin: 0 auto;
+        display: block;
+    }
+    .lessons .left {
+        order: 2;
+    }
+    .lessons .right {
+        width: 100%;
+        padding: 0;
+        order: 1;
+        margin-bottom: 40px;
+    }
+    .advantages .item {
+        max-width: 46%;
+    }
+    .results .item {
+        max-width: 48%;
+        margin-bottom: 100px;    
+    }
+    .teachers.container {
+        margin-bottom: 0;
+    }
+    .form.form-guitar::before {
+        left: 0;
+    }
+    .form label,
+    .form input {
+        width: 100%;
+    }
+    .form label + label {
+        margin-left: 0;
+    }
+    .about-schools .item {
+        width: 50%;
+    }
+    .about-schools .cards {
+        margin-bottom: 0;
+    }
+    .contacts .wrapper {
+        flex-direction: column;
+    }
+    .contacts .left,
+    .contacts .right {
+        width: 100%;
+    }
+    .contacts .left {
+        margin-bottom: 40px;
+    }
 }
 
 /* Landscape phones and portrait tablets */
