@@ -29,8 +29,8 @@ $(document).ready(function () {
     });
 
     $('.results .slider').slick({
-        dots: true,
-        infinite: false,
+        centerMode: true,
+        centerPadding: '60px',
         speed: 100,
         slidesToShow: 3,
         slidesToScroll: 1,
