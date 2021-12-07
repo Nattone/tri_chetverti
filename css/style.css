@@ -917,6 +917,15 @@ section.container {
     .form label + label {
         margin-left: 0;
     }
+    .results .slick-arrow {
+        transform: translateX(-50%);
+    }
+    .results .slick-prev {
+        left: calc(50% - 76px);
+    }
+    .results .slick-next {
+        left: calc(50% + 76px);
+    }
     
 }
 
