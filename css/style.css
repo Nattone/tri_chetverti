@@ -152,6 +152,21 @@ section.container {
 }
 /* onclick bg-color: background: #709BCB; */
 
+.slick-arrow {
+	transform: translateY(-50%);
+	box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
+	width: 63px;
+	height: 63px;
+	background-color: #fff;
+	border: none;
+	border-radius: 100%;
+	z-index: 1;
+    cursor: pointer;
+	font-size: 0;
+}
+
+
+/* header */
 
 .header {
     display: flex;
@@ -212,7 +227,7 @@ section.container {
     z-index: -1;
 } */
 
-/* *** */
+/* banner */
 
 .banner {
     height: 100vh;
@@ -250,7 +265,7 @@ section.container {
     margin-bottom: 54px;
 }
 
-/* *** */
+/* lessons */
 
 .lessons {
     box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
@@ -276,7 +291,7 @@ section.container {
     width: 100%;
 }
 
-/* *** */
+/* advantages */
 
 .advantages .title {
     margin-bottom: 142px;
@@ -313,7 +328,7 @@ section.container {
     text-align: center;
 }
 
-/* *** */
+/* price */
 
 .price {
     margin-bottom: 130px;
@@ -399,7 +414,7 @@ section.container {
     display: block;
 }
 
-/* *** */
+/* action */
 
 .action {}
 .action .title {
@@ -430,11 +445,7 @@ section.container {
     border-radius: 30px;
 }
 
-
-
-/* *** */
-
-
+/* about-us */
 .about-us .cols {
     display: flex;
 }
@@ -452,6 +463,19 @@ section.container {
     filter: drop-shadow(0px 17px 48px rgba(46, 113, 153, 0.25));
     border-radius: 30px;
 }
+.about-us .slider {
+	position: relative;
+}
+.about-us .slider .slick-arrow {
+	top: 50%;
+	transform: translateY(-50%);
+}
+.about-us .slider .slick-prev {
+	left: 32px;
+}
+.about-us .slider .slick-next {
+	right: 32px;
+} 
 .about-us .slider .slide {
     height: auto;
     padding: 40px 0;
@@ -477,7 +501,7 @@ section.container {
     top: 0;
 }
 
-/* *** */
+/* results */
 
 .results {}
 .results .title {
@@ -499,8 +523,7 @@ section.container {
     color: #40230E;
 }
 
-/* *** */
-
+/* teachers */
 
 .teachers {
     /* margin-bottom: 224px; */
@@ -568,7 +591,7 @@ section.container {
     top: -15px;
 }
 
-/* *** */
+/* form */
 
 .form {
     box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
@@ -600,7 +623,6 @@ section.container {
     left: 0;
 }
 
-/* *** */
 .form .content {
     margin-left: 45%;
 }
@@ -640,7 +662,7 @@ section.container {
     margin: 0 auto 20px;
 }
 
-/* *** */
+/* about-schools */
 
 .about-schools .cards {
     margin-bottom: 60px;
@@ -689,7 +711,7 @@ section.container {
     margin: 0 auto;
 }
 
-/* *** */
+/* contacts */
 .contacts .title {
     margin-bottom: 34px;
 }
@@ -722,8 +744,7 @@ section.container {
     overflow: hidden;
 }
 
-/* *** */
-
+/* footer */
 
 .footer {
     background: #40230E;
@@ -802,6 +823,7 @@ section.container {
 добавить доп.класс для стилей с жёлтым/зелёным цветом */
 
 
+/* adaptive  */
 
 /* Landscape tablets and medium desktops */
 @media (max-width: 1199px) {
