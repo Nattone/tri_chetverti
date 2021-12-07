@@ -153,7 +153,7 @@ section.container {
 /* onclick bg-color: background: #709BCB; */
 
 .slick-arrow {
-	transform: translateY(-50%);
+    position: absolute;
 	box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
 	width: 63px;
 	height: 63px;
@@ -458,10 +458,13 @@ section.container {
 }
 .about-us img {
     /* add class name */
-    max-width: 100%;
     object-fit: contain;
     filter: drop-shadow(0px 17px 48px rgba(46, 113, 153, 0.25));
     border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
 }
 .about-us .slider {
 	position: relative;
@@ -508,9 +511,15 @@ section.container {
     margin-bottom: 60px;
 }
 .results .slider {
-    /* display: flex; */
+	padding-bottom: 80px;
 }
-.results .item {}
+.results .item {
+    padding: 0 20px;
+	height: auto;
+}
+.results video {
+	max-width: 100%;
+}
 .results .video-wrapper {
     border-radius: 30px;
     overflow: hidden;
