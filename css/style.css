@@ -176,15 +176,19 @@ section.container {
 .slick-arrow::before {
     content: '';
     background-image: url(../images/icon-arrow.svg);
-    width: 16px;
-    height: 27px;
+    width: 17px;
+    height: 29px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 .slick-next::before {
-    transform: translate(-50%, -50%), rotate(180deg);
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+.icon {
+    height: 20px;
+    width: 21px;
 }
 
 
@@ -233,24 +237,14 @@ section.container {
 .header .links a {
     margin-left: 36px;
 }
-.header .links img {
-    /* position: relative; */
+.header .icon {
     fill: #603009;
-    stroke: #603009;
-    /* display: inline-block; */
+    transition: all .3s ease;
+    transform: scale(1);
 }
-/* .header .links a:hover img::before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: #8CB5E2;
-    border-radius: 100%;
-    left: -6px;
-    right: -6px;
-    top: -6px;
-    bottom: -6px;
-    z-index: -1;
-} */
+.header .icon:hover {
+    transform: scale(1.2);
+}
 
 /* banner */
 
@@ -782,10 +776,13 @@ section.container {
     width: 35%;
     padding: 30px 25px 25px 35px;
 }
+.contacts .left .left-row {
+    padding-left: 32px;
+    position: relative;
+}
 .contacts .right {
     width: 62%;
     padding: 20px;
-
 }
 .contacts .link {
     display: block;
@@ -796,6 +793,14 @@ section.container {
 .contacts .map {
     border-radius: 30px;
     overflow: hidden;
+}
+.contacts .icon {
+    fill: #603009;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 21px;
+    height: 20px;
 }
 
 /* footer */
@@ -872,6 +877,10 @@ section.container {
     font-weight: normal;
     font-size: 14px;
     line-height: 120%;
+}
+.footer .icon {
+    fill: #fff;
+    margin-right: 14px;
 }
 /* Добавить класс для конкретной стр, чтоб отделить, например, cards от всего сайта.
 добавить доп.класс для стилей с жёлтым/зелёным цветом */
