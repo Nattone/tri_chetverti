@@ -1035,6 +1035,16 @@ section.container {
     .footer .menu .item:hover::before {
         background: transparent;
     }
+    .price .item {
+        max-width: 50%;
+        margin-bottom: 60px;
+    }
+    .price .cost-wrapper {
+        flex-direction: column;
+    }
+    .price .cost {
+        margin-bottom: 20px;
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -1183,15 +1193,6 @@ section.container {
     }
     .lessons .title {
         margin-bottom: 40px;
-    }
-    .price .cost-wrapper {
-        flex-direction: column;
-    }
-    .price .cost {
-        margin-bottom: 20px;
-    }
-    .price .cards {
-        /* margin: 0; */
     }
     .price .item {
         margin-bottom: 40px;
