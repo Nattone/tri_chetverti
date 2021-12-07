@@ -17,10 +17,9 @@ $(document).ready(function () {
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 1,
-        // fade: true,
         responsive: [
             {
-                breakpoint: 480,
+                breakpoint: 767,
                 settings: {
                     centerMode: false,
                     centerPadding: '40px',
@@ -35,19 +34,20 @@ $(document).ready(function () {
         centerPadding: '60px',
         speed: 100,
         slidesToShow: 3,
-        slidesToScroll: 1,
-        // fade: true,
+        slidesToScroll: 3,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             }
         ]
