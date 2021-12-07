@@ -36,10 +36,15 @@ p {
 ul li {
     list-style: none;
 }
-section {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+section,
+section.container {
     margin-bottom: 170px;
 }
-
 .menu {
     display: flex;
 }
@@ -146,13 +151,6 @@ section {
     opacity: 1;
 }
 /* onclick bg-color: background: #709BCB; */
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 
 .header {
