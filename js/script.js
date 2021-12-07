@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    //play video
+    //play on video
     $(document).on('click', '.video__wrapper', function () {
         const video = $(this).children('video')[0];
         if ($(this).hasClass('play')) {

@@ -661,6 +661,40 @@ section {
 }
 
 /* *** */
+.contacts .title {
+    margin-bottom: 34px;
+}
+.contacts .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts .left,
+.contacts .right {
+    box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
+    border-radius: 30px;
+}
+.contacts .left {
+    width: 35%;
+    padding: 30px 25px 25px 35px;
+}
+.contacts .right {
+    width: 62%;
+    padding: 20px;
+
+}
+.contacts .link {
+    display: block;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #40230E;
+}
+.contacts .map {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* *** */
+
 
 .footer {
     background: #40230E;
