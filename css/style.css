@@ -474,14 +474,14 @@ section.container {
 	transform: translateY(-50%);
 }
 .about-us .slider .slick-prev {
-	left: 32px;
+	left: 60px;
 }
 .about-us .slider .slick-next {
-	right: 32px;
+	right: 60px;
 } 
 .about-us .slider .slide {
     height: auto;
-    padding: 40px 0;
+    padding: 40px 28px 60px;
 }
 .about-us .slider .slide.slick-current {
     /* padding: 40px 80px; */
