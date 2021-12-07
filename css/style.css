@@ -70,6 +70,7 @@ section.container {
     border: none;
     font-size: 16px;
     font-weight: 800;
+    white-space: nowrap;
 }
 .btn {
     height: 70px;
@@ -470,6 +471,9 @@ section.container {
 }
 
 /* about-us */
+.about-us.container {
+    margin-bottom: 110px;
+}
 .about-us .cols {
     display: flex;
 }
@@ -506,9 +510,6 @@ section.container {
 .about-us .slider .slide {
     height: auto;
     padding: 40px 28px 60px;
-}
-.about-us .slider .slide.slick-current {
-    /* padding: 40px 80px; */
 }
 .about-us .slider .slide-wrapper {
     box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
@@ -572,12 +573,6 @@ section.container {
 .teachers .title {
     margin-bottom: 116px;
 }
-/* .teachers .item {
-    max-width: 33%;
-}
-.teachers .item + .item {
-    margin-left: 20px;
-} */
 .teachers .image-wrapper {
     /* add class name */
     background-color: #a6cee6;
@@ -774,11 +769,12 @@ section.container {
 }
 .contacts .left {
     width: 35%;
-    padding: 30px 25px 25px 35px;
+    padding: 30px 20px 25px 28px;
 }
 .contacts .left .left-row {
-    padding-left: 32px;
+    padding-left: 28px;
     position: relative;
+    margin-bottom: 15px;
 }
 .contacts .right {
     width: 62%;
@@ -838,13 +834,16 @@ section.container {
 .footer .social a {
     margin-right: 30px;
 }
-.footer .link {
+.footer .footer-middle .link {
     display: block;
     margin-bottom: 6px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.footer .link:hover {
+    color: #8cb5e2;
 }
 .footer .link img {
     margin-right: 12px;
@@ -893,6 +892,12 @@ section.container {
     .container {
         max-width: 100%;
     }
+    .header .menu .item {
+        padding: 6px 14px;
+    }
+    .header .links a {
+        margin-left: 16px;
+    }
     .banner {
         background-position-x: 350px;
         height: auto;
@@ -902,14 +907,29 @@ section.container {
         margin-left: 15px;
         margin-right: 15px;
     }
-
+    .form.form-guitar::before {
+        left: 0;
+    }
+    .form label,
+    .form input {
+        width: 100%;
+    }
+    .form label + label {
+        margin-left: 0;
+    }
+    
 }
 
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
-    section,
-    section.container {
+    h1 {
+        font-size: 58px;
         margin-bottom: 40px;
+    }
+    section,
+    section.container,
+    .teachers.container {
+        margin-bottom: 80px;
     }
     .header {
         flex-direction: column;
@@ -923,10 +943,13 @@ section.container {
     .header .links a {
         margin-left: 12px;
     }
+    .banner {
+        background-position-x: right;
+    }
     .banner::before {
         content: '';
         background-color: #fff;
-        opacity: 0.5;
+        opacity: 0.2;
         position: absolute;
         left: 0;
         top: 0;
@@ -934,12 +957,10 @@ section.container {
         height: 100%;
     }
     .banner .wrapper {
-        transform: translate(-50%, -50%);
-        position: absolute;
-        left: 50%;
-        width: 100%;
-        padding: 0 15px;
-        text-align: center;
+        top: 60%;
+    }
+    h1 .accented {
+        color: #603009;
     }
     .lessons .cols {
         flex-direction: column;
@@ -964,24 +985,23 @@ section.container {
         max-width: 48%;
         margin-bottom: 100px;    
     }
-    .teachers.container {
-        margin-bottom: 0;
+    .form.form-guitar {
+        padding-right: 56px;
     }
     .form.form-guitar::before {
-        left: 0;
+        z-index: 0;
     }
-    .form label,
-    .form input {
-        width: 100%;
-    }
-    .form label + label {
-        margin-left: 0;
+    .form .content {
+        position: relative;
     }
     .about-schools .item {
         width: 50%;
     }
     .about-schools .cards {
         margin-bottom: 0;
+    }
+    .about-schools .item {
+        margin-bottom: 60px;
     }
     .contacts .wrapper {
         flex-direction: column;
@@ -992,6 +1012,19 @@ section.container {
     }
     .contacts .left {
         margin-bottom: 40px;
+    }
+    .footer .menu {
+        flex-wrap: wrap;
+    }
+    .footer .menu .item {
+        width: 25%;
+        margin-bottom: 20px;
+    }
+    .footer .menu .item:hover {
+        color: #8cb5e2;
+    }
+    .footer .menu .item:hover::before {
+        background: transparent;
     }
 }
 
@@ -1016,15 +1049,184 @@ section.container {
         text-align: center;
         margin-bottom: 20px;
     }
+    .banner .wrapper {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .banner-btn::before {
+        display: none;
+    }
+    .lessons {
+        padding: 40px 20px;
+    }
+    .advantages .title {
+        margin-bottom: 120px;
+    }
+    .price .item {
+        margin-bottom: 60px;
+        padding: 40px 20px;
+    }
+    .cards .item,
+    .advantages .item {
+        max-width: 100%;
+    }
+    .advantages.container {
+        margin-bottom: 0;
+    }
+    .action .cols {
+        flex-wrap: wrap;
+    }
+    .action .left,
+    .action .right {
+        width: 100%;
+    }
+    .action .left {
+        order: 2;
+    }
+    .action .right {
+        height: 300px;
+    }
+    .action .btn {
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .teachers .title {
+        margin-bottom: 60px;
+    }
+    .teachers .cards .item {
+        margin-bottom: 100px;
+    }
+    .teachers.container {
+        margin-bottom: 0;
+    }
+    .form.form-guitar {
+        padding: 40px 20px;
+    }
+    .form.form-guitar::before {
+        display: none;
+    }
+    .form .content {
+        margin-left: 0;
+    }
+    .about-schools .item {
+        width: 100%;
+    }
+    .about-schools .text-first {
+        margin-bottom: 80px;
+    }
+    .footer .menu {
+        padding: 40px 0 20px;
+    }
+    .footer-middle {
+        flex-direction: column;
+    }
+    .footer-middle .social {
+        margin-bottom: 40px;
+    }
+    .footer-middle .logo {
+        object-fit: contain;
+        display: block;
+        text-align: left;
+        width: 200px;
+        margin-bottom: 40px;
+    }
+    .footer-middle .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-bottom {
+        flex-direction: column;
+    }
+    .footer .left,
+    .footer .right {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
 
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+    h1 {
+        font-size: 48px;
+    }
+    .btn,
+    .btn-small {
+        width: 100%;
+        padding: initial;
+    }
+    .banner {
+        background: none;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .cards {
+        margin: 0;
+    }
+    .lessons .title {
+        margin-bottom: 40px;
+    }
+    .price .cost-wrapper {
+        flex-direction: column;
+    }
+    .price .cost {
+        margin-bottom: 20px;
+    }
+    .price .cards {
+        /* margin: 0; */
+    }
+    .price .item {
+        margin-bottom: 40px;
+    }
+    .price.container {
+        margin-bottom: 60px;
+    }
+    .action .title {
+        margin-bottom: 40px;
+    }
+    .action .left {
+        padding: 40px 20px;
+    }
+    .action .text {
+        margin-bottom: 20px;
+    }
+    .action .btn {
+        position: static;
+        transform: none;
+    }
+    section,
+    section.container,
+    .teachers.container {
+        margin-bottom: 60px;
+    }
+    .teachers .text-wrapper {
+        padding: 20px;
+    }
+    .teachers .cards .item:last-of-type {
+        margin-bottom: 0;
+    }
+    .footer .menu {
+        flex-direction: column;
+    }
+    .footer .menu .item {
+        width: 100%;
+    }
 
 }
 
 /* extra small */
 @media (max-width: 320px) {
+    body {
+        min-width: 320px;
+    }
 
 }

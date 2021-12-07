@@ -32,7 +32,6 @@ $(document).ready(function () {
     $('.results .slider').slick({
         centerMode: true,
         centerPadding: '60px',
-        speed: 100,
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [
