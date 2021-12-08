@@ -787,11 +787,15 @@ section.container {
     display: block;
     font-size: 18px;
     line-height: 1.5;
-    color: #40230E;
+    color: #40230e;
+}
+.contacts .link:hover {
+    color: #8cb5e2;
 }
 .contacts .map {
     border-radius: 30px;
     overflow: hidden;
+    min-height: 200px;
 }
 .contacts .icon {
     fill: #603009;
