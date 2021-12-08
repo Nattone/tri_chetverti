@@ -899,6 +899,34 @@ section.container {
     .container {
         max-width: 100%;
     }
+    .header .menu-btn {
+        display: none;
+    }
+    .header .menu-btn .line {
+        background-color: #603009;
+        width: 30px;
+        height: 4px;
+        position: relative;
+        border-radius: 30px;
+    }
+    .header .menu-btn .line::before,
+    .header .menu-btn .line::after {
+        content: '';
+        background-color: #603009;
+        width: 30px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        border-radius: 30px;
+    }
+    .header .menu-btn .line::before {
+        top: -10px;
+    }
+    .header .menu-btn .line::after {
+        bottom: -10px;
+    }
+
+
     .header .menu .item {
         padding: 6px 14px;
     }
@@ -1066,6 +1094,13 @@ section.container {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .header {
+        flex-direction: row;
+    }
+    .header .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
     .header-wrapper {
         display: none;
         background-color: #fff;
@@ -1078,6 +1113,9 @@ section.container {
         border-bottom-right-radius: 30px;
         padding: 15px;
         box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
+    }
+    .header-wrapper.open {
+        display: block;
     }
     .header .menu {
         flex-direction: column;
