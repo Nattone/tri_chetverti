@@ -1097,7 +1097,8 @@ section.container {
         margin-bottom: 120px;
     }
     .cards .item,
-    .advantages .item {
+    .advantages .item,
+    .teachers .cards .item {
         max-width: 100%;
     }
     .advantages.container {
