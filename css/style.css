@@ -235,6 +235,9 @@ section.container {
     left: 16px;
     right: 16px;
 }
+.header .menu .item.active:hover::before {
+    background-color: transparent;
+}
 .header .links a {
     margin-left: 36px;
 }
