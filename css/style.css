@@ -1003,6 +1003,10 @@ section.container {
     .advantages .item {
         max-width: 46%;
     }
+    .teachers .cards .item {
+        max-width: 50%;
+        margin-bottom: 100px;
+    }
     .results .item {
         max-width: 48%;
         margin-bottom: 100px;    
@@ -1138,9 +1142,6 @@ section.container {
     }
     .teachers .title {
         margin-bottom: 60px;
-    }
-    .teachers .cards .item {
-        margin-bottom: 100px;
     }
     .teachers.container {
         margin-bottom: 0;
