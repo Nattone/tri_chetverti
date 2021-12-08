@@ -1101,7 +1101,7 @@ section.container {
         background-color: #fdfdfd;
         flex-direction: row;
         position: fixed;
-        padding: 20px 15px;
+        padding: 20px 15px 40px;
     }
     .header .menu-btn {
         display: block;
@@ -1112,7 +1112,7 @@ section.container {
     }
     .header-wrapper {
         display: none;
-        background-color: #fff;
+        background-color: #fdfdfd;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -1127,11 +1127,18 @@ section.container {
         display: block;
         top: 110px;
     }
+    .header-wrapper .links {
+        display: flex;
+        justify-content: center;
+    }
     .header .menu {
         flex-direction: column;
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
+    }
+    .header .menu .item {
+        margin-bottom: 6px;
     }
     .banner .wrapper {
         transform: translate(-50%, -50%);
