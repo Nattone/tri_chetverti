@@ -388,7 +388,7 @@ section.container {
     left: 50%;
     transform: translateX(-50%);
 }
-.price .item.acented::before {
+.price .item.accented::before {
     background-color: #fDB49A;
 }
 .price .item:first-of-type::before {
@@ -1117,6 +1117,25 @@ section.container {
         left: 50%;
         transform: translateX(-50%);
     }
+    .about-us .cols {
+        flex-direction: column;
+    }
+    .about-us .left,
+    .about-us .right {
+        width: 100%;
+    }
+    .about-us .left {
+        margin-bottom: 40px
+    }
+    .about-us .right {
+        padding-left: 0;
+    }
+    .about-us .slider .slick-prev {
+        left: 15px;
+    }
+    .about-us .slider .slick-next {
+        right: 15px;
+    }
     .teachers .title {
         margin-bottom: 60px;
     }
@@ -1215,6 +1234,15 @@ section.container {
     .action .btn {
         position: static;
         transform: none;
+    }
+    .about-us .slider .slide-wrapper {
+        padding: 40px;
+    }
+    .about-us .slider .slick-prev {
+        left: 5px;
+    }
+    .about-us .slider .slick-next {
+        right: 5px;
     }
     section,
     section.container,
