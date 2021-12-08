@@ -137,14 +137,14 @@ section.container {
     background-repeat: no-repeat;
     width: 25px;
     height: 29px;
-    z-index: 5;
+    z-index: 1;
 }
 .video-wrapper::after {
     width: 90px;
     height: 90px;
     background: linear-gradient(0deg, #8BB3E0, #8BB3E0), #8CB5E2;
     opacity: 0.9;
-    z-index: 4;
+    z-index: 0;
     border-radius: 100%;
     transition: opacity .3s ease;
 }
@@ -1095,7 +1095,10 @@ section.container {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     .header {
+        background-color: #fdfdfd;
         flex-direction: row;
+        position: fixed;
+        padding: 20px 15px;
     }
     .header .menu-btn {
         display: block;
@@ -1119,6 +1122,7 @@ section.container {
     }
     .header-wrapper.open {
         display: block;
+        top: 110px;
     }
     .header .menu {
         flex-direction: column;
