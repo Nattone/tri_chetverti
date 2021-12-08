@@ -1146,6 +1146,9 @@ section.container {
     .teachers.container {
         margin-bottom: 0;
     }
+    .results .item {
+        margin-bottom: 40px;
+    }
     .form.form-guitar {
         padding: 40px 20px;
     }
