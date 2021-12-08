@@ -54,7 +54,7 @@ $(document).ready(function () {
 
     // open mobile menu
     $(document).on('click', '.menu-btn', function () {
-        $('.header-wrapper').toggleClass('_active');
+        $('.header-wrapper').toggleClass('open');
     });
 
 });
