@@ -920,10 +920,10 @@ section.container {
         border-radius: 30px;
     }
     .header .menu-btn .line::before {
-        top: -10px;
+        bottom: -10px;
     }
     .header .menu-btn .line::after {
-        bottom: -10px;
+        bottom: -20px;
     }
 
 
@@ -1100,6 +1100,9 @@ section.container {
     .header .menu-btn {
         display: block;
         cursor: pointer;
+        height: 24px;
+        width: 32px;
+        position: relative;
     }
     .header-wrapper {
         display: none;

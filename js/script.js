@@ -52,8 +52,9 @@ $(document).ready(function () {
         ]
     });
 
-    $('.menu-btn').click(function () {
-        $('header-wrapper').toggleClass('open');
+    // open mobile menu
+    $(document).on('click', '.menu-btn', function () {
+        $('.header-wrapper').toggleClass('_active');
     });
 
 });
