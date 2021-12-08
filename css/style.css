@@ -903,9 +903,8 @@ section.container {
         height: auto;
     }
     .price .item {
-        max-width: 50%;
+        max-width: 48%;
         margin-bottom: 60px;
-        padding: 40px 20px;
     }
     .lessons,
     .form {
@@ -981,6 +980,9 @@ section.container {
     }
     .price .cost {
         margin-bottom: 20px;
+    }
+    .price .item {
+        padding: 40px 20px;
     }
     .lessons .cols {
         flex-direction: column;
