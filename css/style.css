@@ -88,7 +88,7 @@ section.container {
 .btn-small {
     height: 54px;
     padding: 0 38px;
-    background: linear-gradient(180deg, rgba(169, 207, 231, 0.2) 0%, rgba(22, 64, 91, 0.2) 100%), #8CB5E2;
+    background: linear-gradient(180deg, rgba(169, 207, 231, 0.2) 0%, rgba(22, 64, 91, 0.2) 100%), #8cb5e2;
     box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
 }
 .btn-small:hover {
@@ -117,6 +117,7 @@ section.container {
     cursor: pointer;
 }
 .video {
+    background-color: #8cb5e2;
     display: block;
 }
 /* onclick display none */
@@ -142,7 +143,7 @@ section.container {
 .video-wrapper::after {
     width: 90px;
     height: 90px;
-    background: linear-gradient(0deg, #8BB3E0, #8BB3E0), #8CB5E2;
+    background: linear-gradient(0deg, #8BB3E0, #8BB3E0), #8cb5e2;
     opacity: 0.9;
     z-index: 0;
     border-radius: 100%;
@@ -226,7 +227,7 @@ section.container {
     position: relative;
 }
 .header .menu .item.active {
-    background: linear-gradient(0deg, #A6CEE6, #A6CEE6), #8CB5E2;
+    background: linear-gradient(0deg, #A6CEE6, #A6CEE6), #8cb5e2;
     border-radius: 30px;
     border: none;
 }
