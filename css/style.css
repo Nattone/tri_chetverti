@@ -641,6 +641,9 @@ section.container {
 .form.form-piano {
     background: linear-gradient(0deg, #CEE339, #CEE339), #8CBE22;
 }
+.form .title {
+    margin-bottom: 20px;
+}
 .form::before {
     content: '';
     position: absolute;
@@ -722,7 +725,7 @@ section.container {
     width: 25%;
     width: calc(25% - 36px);
     position: relative;
-    padding: 146px 0 42px;
+    padding: 146px 20px 42px;
     color: #603009;
     display: flex;
     align-items: center;
@@ -1021,13 +1024,12 @@ section.container {
         position: relative;
     }
     .about-schools .item {
-        width: 50%;
+        width: 48%;
+        max-width: 48%;
+        margin-bottom: 60px;
     }
     .about-schools .cards {
         margin-bottom: 0;
-    }
-    .about-schools .item {
-        margin-bottom: 60px;
     }
     .contacts .wrapper {
         flex-direction: column;
@@ -1141,9 +1143,9 @@ section.container {
     .about-us .slider .slick-next {
         right: 15px;
     }
-    .teachers .title {
+    /* .teachers .title {
         margin-bottom: 60px;
-    }
+    } */
     .teachers.container {
         margin-bottom: 0;
     }
@@ -1159,8 +1161,14 @@ section.container {
     .form .content {
         margin-left: 0;
     }
+    .about-schools .cards {
+        margin-bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
     .about-schools .item {
-        width: 100%;
+        margin: 0 auto 60px;
+        width: 80%;
     }
     .about-schools .text-first {
         margin-bottom: 80px;
@@ -1248,6 +1256,9 @@ section.container {
     }
     .about-us .slider .slick-next {
         right: 5px;
+    }
+    .about-schools .item {
+        width: 100%;
     }
     section,
     section.container,
