@@ -14,8 +14,11 @@ h1 {
     margin-top: 0;
     margin-bottom: 48px;
 }
-h1 .accented {
+.page-guitar .accented {
     color: #f3e349;   
+}
+.page-piano .accented {
+    color: #cee339;   
 }
 h2 {
     font-size: 40px;
@@ -255,13 +258,18 @@ section.container {
 
 .banner {
     height: 100vh;
-    background-image: url(../images/banner-guitar.png);
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
     z-index: 0;
     min-height: 720px;
     margin-bottom: 0;
+}
+.page-guitar .banner {
+    background-image: url(../images/banner-guitar.png);
+}
+.page-piano .banner {
+    background-image: url(../images/banner-piano.png);
 }
 .banner .wrapper {
     width: 60%;
@@ -335,7 +343,6 @@ section.container {
 }
 .advantages .item .number {
     position: absolute;
-    background: #f0e24a;
     top: 0;
     left: 50%;
     transform: translate(-50%, -75%);
@@ -350,6 +357,12 @@ section.container {
     text-align: center;
     z-index: 1;
     margin: 0;
+}
+.page-guitar .advantages .item .number {
+    background: #f0e24a;
+}
+.page-piano .advantages .item .number {
+    background: #cee339;
 }
 .advantages .item .text {
     font-weight: 800;
@@ -387,11 +400,17 @@ section.container {
     background-repeat: no-repeat;
     top: -92%;
     z-index: -1;
-    background-color: #f0e24a;
     border-radius: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
+.page-guitar .price .item::before {
+    background-color: #f0e24a;
+}
+.page-piano .price .item::before {
+    background-color: #cee339;
+}
+ 
 .price .item.accented::before {
     background-color: #fDB49A;
 }
@@ -639,11 +658,11 @@ section.container {
     padding: 47px 112px 56px 47px;
     position: relative;
 }
-.form.form-guitar {
+.page-guitar .form {
     background: linear-gradient(0deg, #F0E24A, #F0E24A), #8CBE22;
 }
-.form.form-piano {
-    background: linear-gradient(0deg, #CEE339, #CEE339), #8CBE22;
+.page-piano .form {
+    background: linear-gradient(0deg, #cee339, #cee339), #8CBE22;
 }
 .form .title {
     margin-bottom: 20px;
@@ -653,13 +672,13 @@ section.container {
     position: absolute;
     bottom: 0;
 }
-.form.form-guitar::before {
+.page-guitar .form::before {
     background-image: url(../images/form-guitar.png);
     width: 436px;
     height: 555px;
     left: 88px;
 }
-.form.form-piano::before {
+.page-piano .form::before {
     background-image: url(../images/form-piano.png);
     width: 515px;
     height: 561px;
