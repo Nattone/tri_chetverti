@@ -1170,8 +1170,9 @@ section.container {
 	}
     .banner {
 		padding-top: 92px;
-		background-position-y: 50%;
+		background-position-y: 80%;
         min-height: 480px;
+        padding-bottom: 40px;
 	}
     .banner .wrapper {
 		position: relative;
@@ -1300,6 +1301,12 @@ section.container {
         width: 100%;
         margin-bottom: 20px;
 
+    }
+}
+@media (max-width: 600px) {
+    .banner {
+        background-position-y: 65%;
+        background-size: 70%;
     }
 }
 
