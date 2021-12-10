@@ -1169,29 +1169,18 @@ section.container {
 		margin-bottom: 0;
 	}
     .banner {
-		background-size: contain;
 		padding-top: 92px;
-		background-position-y: 100%;
+		background-position-y: 50%;
 	}
     .banner .container {
 		height: 100%;
 	}
     .banner .wrapper {
-        /* transform: translate(-50%, -50%);
-        position: absolute;
-        left: 50%;
-        width: 100%;
-        padding: 0 15px; */
-        text-align: center;
-
 		position: relative;
 		transform: none;
 		top: 0;
 		left: 0;
 		padding: 0;
-	}
-    .banner .subtitle {
-		margin-bottom: 400px;
 	}
     .banner-btn::before {
         display: none;
