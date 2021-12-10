@@ -101,7 +101,7 @@ section.container {
     background: linear-gradient(180deg, rgba(169, 207, 231, 0.2) 0%, rgba(22, 64, 91, 0.2) 100%), #A4C8F0;
     box-shadow: 0px 4px 9px rgba(46, 113, 153, 0.25);
 }
-.page-guitar .cards {
+.cards {
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
@@ -112,8 +112,6 @@ section.container {
     background: #fff;
     box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
     border-radius: 30px;
-}
-.page-guitar .cards .item {
     max-width: 31%;
     margin: 0 1%;
     
