@@ -1324,18 +1324,12 @@ section.container {
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position-y: 60%;
-		padding-top: 92px;
-		margin-bottom: 40px;
 	}
     .banner .container {
 		height: auto;
 	}
     .banner .wrapper {
-		position: relative;
-		transform: none;
-		top: 0;
-		left: 0;
-		padding: 0;
+        width: 100%;
 	}
     .banner .subtitle {
 		font-size: 20px;
