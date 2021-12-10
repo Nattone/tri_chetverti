@@ -568,11 +568,11 @@ section.container {
 }
 .results .slick-prev,
 .page-piano .teachers .slick-prev {
-    left: calc(50% + 506px);
+    left: calc(50% + 449px);
 }
 .results .slick-next,
 .page-piano .teachers .slick-next {
-    left: calc(50% + 594px);
+    left: calc(50% + 537px);
 }
 .results .item,
 .page-piano .teachers .item-wrapper {
