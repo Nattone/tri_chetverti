@@ -9,7 +9,7 @@ h1, h2 {
 }
 h1 {
     font-size: 65px;
-    line-height: 110%;
+    line-height: 1.1;
     color: #603009;
     margin-top: 0;
     margin-bottom: 48px;
@@ -33,7 +33,7 @@ a {
 }
 p {
     font-size: 18px;
-    line-height: 150%;
+    line-height: 1.5;
     color: #40230e;
 }
 ul li {
@@ -597,7 +597,7 @@ section.container {
     text-align: center;
     font-size: 25px;
     line-height: 34px;
-    color: #40230E;
+    color: #40230e;
 }
 
 /* teachers */
@@ -634,7 +634,7 @@ section.container {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 150.02%;
+    line-height: 1.5;
     color: #40230e;
     margin-bottom: 20px;
     text-align: center;
@@ -644,8 +644,8 @@ section.container {
     position: relative;
     text-align: center;
     font-size: 18px;
-    line-height: 150.02%;
-    color: #40230E;
+    line-height: 1.5;
+    color: #40230e;
 }
 .teachers ul li+li {
     /* add class name */
@@ -654,7 +654,7 @@ section.container {
 .teachers ul li+li::before {
     content: '';
     display: block;
-    border: 5px solid #40230E;
+    border: 5px solid #40230e;
     border-radius: 100%;
     width: 0;
     height: 0;
@@ -664,7 +664,9 @@ section.container {
     transform: translateX(-50%);
     top: -15px;
 }
-
+.page-piano .subtitle {
+    color: #603009;
+}
 .teachers .text-row {
     display: flex;
     margin-bottom: 14px;
@@ -737,7 +739,7 @@ section.container {
 }
 .form .checkbox {
     font-size: 14px;
-    line-height: 150%;
+    line-height: 1.5;
     color: #5d3110;
 }
 .form .checkbox input {
@@ -765,7 +767,7 @@ section.container {
 }
 .about-schools .text {
     font-size: 18px;
-    line-height: 150.02%;
+    line-height: 1.5;
     text-align: center;
     color: #000;
     max-width: 970px;
@@ -862,7 +864,7 @@ section.container {
 /* footer */
 
 .footer {
-    background: #40230E;
+    background: #40230e;
     color: #fff;
 }
 .footer .container > .logo {
@@ -872,7 +874,7 @@ section.container {
     padding: 50px 0;
     justify-content: space-between;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 1.5;
 }
 .footer .menu .item {
     color: #fff;;
@@ -891,7 +893,7 @@ section.container {
 .footer .subtitle {
     font-weight: normal;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 1.5;
     margin-bottom: 10px;
 }
 .footer .social a {
@@ -939,7 +941,7 @@ section.container {
     color: #fff;
     font-weight: normal;
     font-size: 14px;
-    line-height: 120%;
+    line-height: 1.2;
 }
 .footer .icon {
     fill: #fff;
@@ -1055,16 +1057,6 @@ section.container {
         background-position-x: right;
         background-size: 60%;
     }
-    /* .banner::before {
-        content: '';
-        background-color: #fff;
-        opacity: 0.2;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    } */
     .banner .wrapper {
         top: 60%;
     }
