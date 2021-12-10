@@ -565,16 +565,20 @@ section.container {
 .results .title {
     margin-bottom: 60px;
 }
-.results .slider {
+.results .slider,
+.page-piano .teachers .slider {
 	padding-bottom: 80px;
 }
-.results .slick-arrow {
+.results .slick-arrow,
+.page-piano .teachers .slick-arrow {
     bottom: 0;
 }
-.results .slick-prev {
+.results .slick-prev,
+.page-piano .teachers .slick-prev {
     left: calc(50% + 506px);
 }
-.results .slick-next {
+.results .slick-next,
+.page-piano .teachers .slick-next {
     left: calc(50% + 594px);
 }
 .results .item {
@@ -991,13 +995,16 @@ section.container {
     .form label + label {
         margin-left: 0;
     }
-    .results .slick-arrow {
+    .results .slick-arrow,
+    .page-piano .teachers .slick-arrow {
         transform: translateX(-50%);
     }
-    .results .slick-prev {
+    .results .slick-prev,
+    .page-piano .teachers .slick-prev {
         left: calc(50% - 76px);
     }
-    .results .slick-next {
+    .results .slick-next,
+    .page-piano .teachers .slick-next {
         left: calc(50% + 76px);
     }
     
