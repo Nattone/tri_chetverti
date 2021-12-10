@@ -80,4 +80,8 @@ $(document).ready(function () {
         $('.header-wrapper').toggleClass('open');
     });
 
+    // input mask
+
+    $('input[type="tel"]').inputmask({ "mask": "(999) 999-9999" })
+
 });
