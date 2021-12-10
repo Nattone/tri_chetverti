@@ -1443,5 +1443,11 @@ section.container {
     .footer .footer-middle .link:last-child {
         padding-left: 35px;
     }
+    .footer .links {
+        justify-content: flex-start;
+    }
+    .footer .links a {
+        margin-right: 12px;
+    }
 
 }
