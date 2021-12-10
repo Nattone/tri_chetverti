@@ -115,7 +115,7 @@ section.container {
     max-width: 31%;
     margin: 0 1%;
 }
-.page-piano .teachers {
+.page-piano .teachers .cards .item {
     max-width: 100%;
     margin: 0;
 }
