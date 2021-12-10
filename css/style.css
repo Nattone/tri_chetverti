@@ -1434,5 +1434,14 @@ section.container {
     body {
         min-width: 320px;
     }
+    .footer-middle {
+        align-items: flex-start;
+    }
+    .footer .footer-middle .link {
+        justify-content: flex-start;
+    }
+    .footer .footer-middle .link:last-child {
+        padding-left: 35px;
+    }
 
 }
