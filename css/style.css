@@ -1323,13 +1323,14 @@ section.container {
     .banner {
 		background-size: contain;
 		background-repeat: no-repeat;
-		background-position-y: 60%;
+		background-position-y: 70%;
 	}
     .banner .container {
 		height: auto;
 	}
     .banner .wrapper {
         width: 100%;
+        text-align: center;
 	}
     .banner .subtitle {
 		font-size: 20px;
@@ -1420,7 +1421,7 @@ section.container {
 }
 @media (max-width: 425px) {
 	.banner {
-		background-position-y: 80%;
+		background-position-y: 75%;
 	}
     .footer .menu {
         flex-direction: column;
