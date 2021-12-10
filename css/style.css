@@ -112,9 +112,14 @@ section.container {
     background: #fff;
     box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
     border-radius: 30px;
+}
+.page-guitar .cards .item {
     max-width: 31%;
     margin: 0 1%;
+    
 }
+.page-piano {}
+
 .video-wrapper {
     position: relative;
     cursor: pointer;
