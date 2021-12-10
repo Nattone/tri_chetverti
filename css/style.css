@@ -1440,7 +1440,7 @@ section.container {
     .footer .footer-middle .link {
         justify-content: flex-start;
     }
-    .footer .footer-middle .link:last-child {
+    .footer .footer-middle .phone .link:last-child {
         padding-left: 35px;
     }
     .footer .links {
