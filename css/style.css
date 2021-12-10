@@ -884,6 +884,7 @@ section.container {
 }
 .footer .phone {
     margin-bottom: 4px;
+    width: 100%;
 }
 .footer-bottom {
     padding: 26px 0 36px;
@@ -1260,6 +1261,8 @@ section.container {
     }
     .footer .container > .logo {
         display: block;
+        padding: 40px 0 0;
+        margin: 0 auto;
     }
     .footer .menu {
         padding: 40px 0 20px;
@@ -1383,11 +1386,22 @@ section.container {
     .teachers .cards .item:last-of-type {
         margin-bottom: 0;
     }
-    .footer .menu {
-        flex-direction: column;
-    }
     .footer .menu .item {
-        width: 100%;
+        width: 50%;
+    }
+    .footer-middle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .footer-middle .link {
+        justify-content: center;
+    }
+    .footer .left {
+        padding-right: 0;
+    }
+    .footer .copyright,
+    .footer .text {
+        opacity: .5;;
     }
 
 }
@@ -1395,6 +1409,12 @@ section.container {
 	.banner {
 		background-position-y: 80%;
 	}
+    .footer .menu {
+        flex-direction: column;
+    }
+    .footer .menu .item {
+        width: 100%;
+    }
 }
 @media (max-width: 360px) {
 	.banner .subtitle {
