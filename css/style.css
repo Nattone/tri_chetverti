@@ -1171,6 +1171,7 @@ section.container {
     .banner {
 		padding-top: 92px;
 		background-position-y: 50%;
+        min-height: 480px;
 	}
     .banner .container {
 		height: 100%;
