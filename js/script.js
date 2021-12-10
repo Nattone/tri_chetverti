@@ -82,6 +82,6 @@ $(document).ready(function () {
 
     // input mask
 
-    $('input[type="tel"]').inputmask({ "mask": "(999) 999-9999" })
+    $('input[type="tel"]').inputmask({ "mask": "+7 (999) 999-9999", "placeholder": "x" })
 
 });
