@@ -146,6 +146,7 @@ section.container {
     width: 25px;
     height: 29px;
     z-index: 1;
+    left: 50.5%;
 }
 .video-wrapper::after {
     width: 90px;
