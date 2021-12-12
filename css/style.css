@@ -626,6 +626,10 @@ section.container {
     transform: translateX(-50%);
     max-width: 100%;
 }
+.page-piano .teachers .teachers-img {
+    height: 360px;
+    object-fit: cover;
+}
 .teachers .text-wrapper {
     padding: 20px 44px 28px;
 }
