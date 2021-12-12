@@ -9,10 +9,10 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/jquery.inputmask.min.js"></script>
 
 
 </head>
@@ -471,6 +471,23 @@
         </div>
     </footer>
 
+    <div class="popup" style="display: none;">
+        <h2 class="title">Заполните простую форму и мы свяжемся с вами в ближайшее время</h2>
+        <form action="#" method="post" class="popup-form">
+            <label><input type="text" name="name" placeholder="Введите имя" required="required"></label>
+            <label>
+                <input type="tel" name="phone" placeholder="Введите телефон" required="required">
+                <p class="error" id="request-phone" style="display: none;">Некорректно введен номер, проверьте и
+                    повторите попытку</p>
+            </label>
+            <button class="btn" type="submit">Отправить</button>
+            <div class="form-row">
+                <input type="checkbox" id="checkbox" class="checkbox-input">
+                <label for="checkbox" class="checkbox-label">Я даю согласие на обработку моих персональных данных и
+                    принимаю условия политики конфиденциальности</label>
+            </div>
+        </form>
+    </div>
     <div class="icons" style="display: none;">
         <svg>
             <symbol id="icon-profile" width="20" height="21" viewBox="0 0 20 21">

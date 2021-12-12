@@ -565,6 +565,10 @@ section.container {
 .page-piano .teachers .slider {
 	padding-bottom: 80px;
 }
+.page-piano .teachers .slider {
+    width: 100vw;
+    margin: 0;
+}
 .results .slick-arrow,
 .page-piano .teachers .slick-arrow {
     bottom: 0;
@@ -702,6 +706,7 @@ section.container {
 .page-piano .form {
     background: linear-gradient(0deg, #cee339, #cee339), #8CBE22;
 }
+.popup-form .title,
 .form .title {
     margin-bottom: 20px;
 }
@@ -723,23 +728,28 @@ section.container {
     left: 0;
 }
 
+.popup-form,
 .form {
     position: relative;
 }
 .form .content {
     margin-left: 45%;
 }
+.popup-form .text,
 .form .text {
     margin-bottom: 24px;
 }
+.popup-form .label,
 .form label {
     display: inline-block;
     margin-bottom: 34px;
     position: relative;
 }
-.form-row {
+.popup-form .form-row,
+.form .form-row {
     position: relative;
 }
+.popup-form .checkbox-input, 
 .form .checkbox-input {
     position: absolute;
     opacity: 0;
@@ -748,10 +758,12 @@ section.container {
     top: 4px;
     left: 0;
 }
+.popup-form .checkbox-label,
 .form .checkbox-label {
     position: relative;
     padding-left: 24px;
 }
+.popup-form .checkbox-label::before,
 .form .checkbox-label::before {
     content: '';
     width: 12px;
@@ -762,6 +774,7 @@ section.container {
     top: 4px;
     left: 0;
 }
+.popup-form .checkbox-input:checked +.checkbox-label::before,
 .form .checkbox-input:checked +.checkbox-label::before {
     background-image: url(../images/icon-checked.svg);
     background-position: center;
@@ -770,6 +783,7 @@ section.container {
 .form label + label {
     margin-left: 20px;
 }
+.popup-form input,
 .form input {
     width: 240px;
     border-radius: 10px;
@@ -777,11 +791,13 @@ section.container {
     text-align: center;
     border: none;
 }
+.popup-form .checkbox,
 .form .checkbox {
     font-size: 14px;
     line-height: 1.5;
     color: #5d3110;
 }
+.popup-form .checkbox input,
 .form .checkbox input {
     border: 1px solid #5d3110;
     box-sizing: border-box;
@@ -795,6 +811,7 @@ section.container {
     display: block;
     margin: 0 auto 20px;
 }
+.popup-form .error,
 .form .error {
     font-size: 12px;
     line-height: 1.5;
@@ -995,8 +1012,69 @@ section.container {
     fill: #fff;
     margin-right: 14px;
 }
-/* Добавить класс для конкретной стр, чтоб отделить, например, cards от всего сайта.
-добавить доп.класс для стилей с жёлтым/зелёным цветом */
+
+
+/* popup form */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 90px 80px 100px;
+    box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
+    border-radius: 30px;
+    background-color: #fff;
+    width: 80%;
+    overflow: hidden;
+}
+.popup::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/form__decor.svg);
+    background-repeat: no-repeat;
+    width: 50%;
+    right: -2%;
+    top: -18%;
+    bottom: -15%;
+    transform: rotate(2deg);
+    z-index: -1;
+    background-size: 120%;
+}
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+}
+.popup .title {
+    margin: 0 auto 52px;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    color: #40230E;
+    max-width: 600px;
+}
+.popup label {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.popup input {
+    border: 1px solid #603009;
+    border-radius: 30px;
+    width: 100%;
+    background: transparent;
+}
+.popup label:last-of-type {
+    margin-bottom: 50px;
+}
+.popup .btn {
+    width: 306px;
+    margin-bottom: 20px;
+}
 
 
 /* adaptive  */
@@ -1056,10 +1134,13 @@ section.container {
     .form.form-guitar::before {
         left: 0;
     }
+    .popup-form label,
+    .popup-form input
     .form label,
     .form input {
         width: 100%;
     }
+    .popup-form label + label,
     .form label + label {
         margin-left: 0;
     }
@@ -1075,7 +1156,11 @@ section.container {
     .page-piano .teachers .slick-next {
         left: calc(50% + 76px);
     }
-    
+    .popup::before {
+        background-size: cover;
+        top: -5%;
+        bottom: -5%;
+    }
 }
 
 /* Portrait tablets and small desktops */
@@ -1381,6 +1466,15 @@ section.container {
         background-position-y: 65%;
         background-size: 70%;
     }
+    .popup {
+        padding: 40px;
+        width: 90%;
+        min-width: 320px;
+    }
+    .popup::before {
+        background-size: cover;
+        right: -5%;
+    }
 }
 
 /* Portrait phones and smaller */
@@ -1531,3 +1625,5 @@ section.container {
     }
 
 }
+
+
