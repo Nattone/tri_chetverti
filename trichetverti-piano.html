@@ -374,8 +374,12 @@
             <h2 class="title">Записаться на пробное занятие</h2>
             <p class="text">Заполните форму и мы перезвоним вам в течение 5 минут</p>
             <form action="#" method="post">
-                <label><input type="text" name="name" placeholder="Введите имя"></label>
-                <label><input type="tel" name="phone" placeholder="Введите телефон"></label>
+                <label><input type="text" name="name" placeholder="Введите имя" required="required"></label>
+                <label>
+                    <input type="tel" name="phone" placeholder="Введите телефон" required="required">
+                    <p class="error" id="request-phone" style="display: none;">Некорректно введен номер, проверьте и
+                        повторите попытку</p>
+                </label>
                 <button class="btn-small" type="submit">Отправить</button>
                 <div class="form-row">
                     <input type="checkbox" id="checkbox" class="checkbox-input">

@@ -731,6 +731,7 @@ section.container {
 .form label {
     display: inline-block;
     margin-bottom: 34px;
+    position: relative;
 }
 .form-row {
     position: relative;
@@ -789,6 +790,14 @@ section.container {
 .form .btn-small {
     display: block;
     margin: 0 auto 20px;
+}
+.form .error {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #40230E;
+    position: absolute;
+    left: 0;
+    top: 100%;
 }
 
 /* about-schools */
