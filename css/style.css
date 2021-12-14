@@ -1472,6 +1472,9 @@ section.container {
         background-position-y: 65%;
         background-size: 70%;
     }
+    .page-piano .banner {
+        background-position-y: 95%;
+    }
     .popup {
         padding: 40px;
         width: 90%;
@@ -1493,7 +1496,8 @@ section.container {
         width: 100%;
         padding: initial;
     }
-    .banner {
+    .banner,
+    .page-piano .banner {
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position-y: 70%;
