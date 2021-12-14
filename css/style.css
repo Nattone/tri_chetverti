@@ -1132,7 +1132,8 @@ section.container {
         margin-left: 15px;
         margin-right: 15px;
     }
-    .form.form-guitar::before {
+    .form.form-guitar::before,
+    .page-piano .form::before {
         left: 0;
     }
     .popup-form label,
@@ -1233,10 +1234,12 @@ section.container {
         max-width: 48%;
         margin-bottom: 100px;    
     }
-    .form.form-guitar {
+    .form.form-guitar,
+    .page-piano .form {
         padding-right: 56px;
     }
-    .form.form-guitar::before {
+    .form.form-guitar::before,
+    .page-piano .form::before {
         z-index: 0;
     }
     .form .content {
@@ -1403,10 +1406,12 @@ section.container {
     .results .item {
         margin-bottom: 40px;
     }
-    .form.form-guitar {
+    .form.form-guitar,
+    .page-piano .form {
         padding: 40px 20px;
     }
-    .form.form-guitar::before {
+    .form.form-guitar::before,
+    .page-piano .form::before {
         display: none;
     }
     .form .content {
