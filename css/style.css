@@ -1136,7 +1136,7 @@ section.container {
         left: 0;
     }
     .popup-form label,
-    .popup-form input
+    .popup-form input,
     .form label,
     .form input {
         width: 100%;
