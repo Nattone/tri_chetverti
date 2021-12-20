@@ -120,7 +120,6 @@ section.container {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: center;
   margin: 0 -10px;
 }
@@ -402,7 +401,6 @@ section.container {
   margin-bottom: 40px;
 }
 .price .item {
-  /* width: 33%; */
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -452,12 +450,10 @@ section.container {
   width: 100%;
 }
 .price .price-item-list {
-  /* change class name */
   margin-bottom: 10px;
   width: 100%;
 }
 .price .price-item-list li {
-  /* add class name */
   margin-bottom: 18px;
   font-size: 25px;
   line-height: 34px;
@@ -527,7 +523,6 @@ section.container {
   padding-left: 45px;
 }
 .about-us img {
-  /* add class name */
   object-fit: contain;
   filter: drop-shadow(0px 17px 48px rgba(46, 113, 153, 0.25));
   border-radius: 30px;
@@ -632,7 +627,6 @@ section.container {
   margin-bottom: 36px;
 }
 .teachers .image-wrapper {
-  /* add class name */
   background-color: #a6cee6;
   height: 280px;
   position: relative;
@@ -664,7 +658,6 @@ section.container {
   text-align: center;
 }
 .teachers ul li {
-  /* add class name */
   position: relative;
   text-align: center;
   font-size: 18px;
@@ -672,7 +665,6 @@ section.container {
   color: #40230e;
 }
 .teachers ul li + li {
-  /* add class name */
   margin-top: 20px;
 }
 .teachers ul li + li::before {
@@ -869,7 +861,6 @@ section.container {
   text-align: center;
 }
 .about-schools img {
-  /* add class name */
   width: 140px;
   height: 140px;
   border-radius: 100%;
@@ -1367,7 +1358,10 @@ body.with-popup::before {
   .popup-big .left {
     margin-bottom: 20px;
   }
-
+  .popup,
+  .popup-big {
+    background-size: 300%;
+  }
   .popup .btn-close,
   .popup-big .btn-close {
     top: 0;
@@ -1496,9 +1490,7 @@ body.with-popup::before {
   .about-us .slider .slick-next {
     right: 15px;
   }
-  /* .teachers .title {
-        margin-bottom: 60px;
-    } */
+
   .teachers.container {
     margin-bottom: 0;
   }
@@ -1543,12 +1535,6 @@ body.with-popup::before {
     margin-bottom: 40px;
   }
   .footer-middle .logo {
-    /* object-fit: contain;
-        display: block;
-        text-align: left;
-        width: 200px;
-        margin-bottom: 40px;
-         */
     display: none;
   }
   .footer-middle .footer-contacts {
@@ -1581,12 +1567,6 @@ body.with-popup::before {
     background: #fff;
     background-size: cover;
   }
-
-  /* .popup::before,
-  .popup-big::before {
-    background-size: cover;
-    right: -5%;
-  } */
 }
 
 /* Portrait phones and smaller */
