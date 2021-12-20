@@ -743,6 +743,10 @@ section.container {
   left: 0;
 }
 
+.popup.open {
+  display: block;
+}
+
 .popup-form,
 .form {
   position: relative;
@@ -838,11 +842,19 @@ section.container {
 
 .popup .btn-close {
   position: absolute;
-  right: -11px;
-  top: -22px;
+  right: -68px;
+  top: -79px;
   width: 57px;
   height: 57px;
   background: url(../images/icon-close.svg);
+  border: none;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+}
+
+.popup .btn-close:hover {
+  transform: rotate(90deg);
 }
 
 /* about-schools */
