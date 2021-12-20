@@ -1366,9 +1366,17 @@ body.with-popup::before {
   .popup-big .left {
     margin-bottom: 20px;
   }
-  /* .popup .btn-close, */
+
+  .popup .btn-close,
   .popup-big .btn-close {
     top: 0;
+    right: 0;
+    transform: scale(0.5);
+    background: url(../images/icon-close-dark.svg);
+  }
+  .popup .btn-close:hover,
+  .popup-big .btn-close:hover {
+    transform: scale(0.5);
   }
 }
 
@@ -1572,17 +1580,7 @@ body.with-popup::before {
     background: #fff;
     background-size: cover;
   }
-  .popup .btn-close,
-  .popup-big .btn-close {
-    top: 0;
-    right: 0;
-    transform: scale(0.5);
-    background: url(../images/icon-close-dark.svg);
-  }
-  .popup .btn-close:hover,
-  .popup-big .btn-close:hover {
-    transform: scale(0.5);
-  }
+
   /* .popup::before,
   .popup-big::before {
     background-size: cover;
