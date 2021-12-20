@@ -1089,7 +1089,6 @@ body.with-popup::before {
 .popup-big .title {
   max-width: 820px;
 }
-
 .popup label,
 .popup-big label {
   width: 100%;
@@ -1128,6 +1127,10 @@ body.with-popup::before {
 .popup .btn-close:hover,
 .popup-big .btn-close:hover {
   transform: rotate(90deg);
+}
+
+.popup .radio-block {
+  display: flex;
 }
 
 /* adaptive  */
