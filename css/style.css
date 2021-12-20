@@ -1357,6 +1357,9 @@ body.with-popup::before {
     max-width: 50%;
     margin-bottom: 60px;
   }
+  .popup-big {
+    background-size: 350%;
+  }
   .popup-big .radio-block {
     flex-direction: column;
   }
