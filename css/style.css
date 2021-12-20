@@ -1543,13 +1543,12 @@ body.with-popup::before {
   .popup-big .btn-close {
     top: 0;
     right: 0;
-    border: 2px solid red;
     transform: scale(0.5);
     background: url(../images/icon-close-dark.svg);
   }
   .popup .btn-close:hover,
   .popup-big .btn-close:hover {
-    transform: none;
+    transform: scale(0.5);
   }
   /* .popup::before,
   .popup-big::before {
