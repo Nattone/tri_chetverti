@@ -1129,8 +1129,18 @@ body.with-popup::before {
   transform: rotate(90deg);
 }
 
-.popup .radio-block {
+.popup-big .radio-block {
   display: flex;
+  margin-bottom: 58px;
+  justify-content: center;
+}
+.popup-big .left,
+.popup-big .right {
+  padding: 0 22px;
+}
+
+.popup-big .radio-input {
+  margin-bottom: 10px;
 }
 
 /* adaptive  */
