@@ -1363,6 +1363,10 @@ body.with-popup::before {
   .popup-big .left {
     margin-bottom: 20px;
   }
+  /* .popup .btn-close, */
+  .popup-big .btn-close {
+    top: 0;
+  }
 }
 
 /* Landscape phones and portrait tablets */
