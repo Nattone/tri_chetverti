@@ -606,6 +606,7 @@ section.container {
 }
 .results video {
   max-width: 100%;
+  width: 100%;
 }
 .results .video-wrapper {
   border-radius: 30px;
