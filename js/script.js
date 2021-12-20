@@ -88,10 +88,20 @@ $(document).ready(function () {
     $(".popup").addClass("open");
     $("body").addClass("with-popup");
   });
-
   // close popup
   $(document).on("click", ".btn-close", function () {
     $(".popup").removeClass("open");
+    $("body").removeClass("with-popup");
+  });
+
+  // open popup-big
+  $(document).on("click", ".btn-popup-big", function () {
+    $(".popup-big").addClass("open");
+    $("body").addClass("with-popup");
+  });
+  // close popup-big
+  $(document).on("click", ".btn-close", function () {
+    $(".popup-big").removeClass("open");
     $("body").removeClass("with-popup");
   });
 });

@@ -72,7 +72,7 @@
                     В их основе авторская методика, разработанная основателем Школы «Три Четверти». Используем
                     собственные
                     учебники и методические материалы.</p>
-                <button class="btn btn-popup" type="submit">Хочу на занятие!</button>
+                <button class="btn btn-popup-big" type="submit">Хочу на занятие!</button>
             </div>
             <div class="right">
                 <div class="video-wrapper">
@@ -366,7 +366,7 @@
             сделали все
             возможное, чтобы уроки не были скучными, и Вам не пришлось зубрить нудную теорию. Все необходимые знания и
             навыки наши студенты получают через практические занятия – именно такой подход мы считаем правильным.</p>
-        <button class="btn btn-popup" type="submit">Хочу на занятие!</button>
+        <button class="btn btn-popup-big" type="submit">Хочу на занятие!</button>
     </section>
     <section class="contacts container" id="contacts">
         <h2 class="title">Контакты</h2>
@@ -484,6 +484,25 @@
             <div class="form-row">
                 <input type="checkbox" id="form-checkbox" class="checkbox-input">
                 <label for="form-checkbox" class="checkbox-label">Я даю согласие на обработку моих персональных данных и
+                    принимаю условия политики конфиденциальности</label>
+            </div>
+        </form>
+        <button class="btn-close"></button>
+    </div>
+
+    <div class="popup-big">
+        <h2 class="title">заполните простую форму и мы свяжемся с вами <br/>в ближайшее время, чтобы выбрать удобную для вас дату</h2>
+        <form action="#" method="post" class="popup-form">
+            <label><input type="text" name="name" placeholder="Введите имя" required="required"></label>
+            <label>
+                <input type="tel" name="phone" placeholder="Введите телефон" required="required">
+                <p class="error" id="request-phone" style="display: none;">Некорректно введен номер, проверьте и
+                    повторите попытку</p>
+            </label>
+            <button class="btn" type="submit">Отправить</button>
+            <div class="form-row">
+                <input type="checkbox" id="form-big-checkbox" class="checkbox-input">
+                <label for="form-big-checkbox" class="checkbox-label">Я даю согласие на обработку моих персональных данных и
                     принимаю условия политики конфиденциальности</label>
             </div>
         </form>

@@ -1043,39 +1043,28 @@ body.with-popup::before {
   z-index: 3;
 }
 
-.popup {
+.popup,
+.popup-big {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 17px 48px rgba(46, 113, 153, 0.25);
   border-radius: 30px;
-  /* background-color: #fff; */
   background-image: url(../images/popup__bg.svg);
   background-repeat: no-repeat;
-  background-size: cover;
   width: 80%;
   z-index: 5;
   display: none;
-  overflow: hidden;
   padding: 90px 80px 100px;
+  background-size: 120%;
+  background-position: center;
 }
-.popup.open {
+.popup.open,
+.popup-big.open {
   display: block;
 }
-/* .popup::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/form__decor.svg);
-  background-repeat: no-repeat;
-  width: 50%;
-  right: -2%;
-  top: -18%;
-  bottom: -15%;
-  transform: rotate(2deg);
-  z-index: -1;
-  background-size: 120%;
-} */
+
 .popup-form {
   display: flex;
   flex-direction: column;
@@ -1083,7 +1072,8 @@ body.with-popup::before {
   margin: 0 auto;
   align-items: center;
 }
-.popup .title {
+.popup .title,
+.popup-big .title {
   margin: 0 auto 52px;
   font-weight: 800;
   font-size: 23px;
@@ -1093,25 +1083,29 @@ body.with-popup::before {
   color: #40230e;
   max-width: 600px;
 }
-.popup label {
+.popup label,
+.popup-big label {
   width: 100%;
   margin-bottom: 20px;
 }
-.popup input {
+.popup input,
+.popup-big input {
   border: 1px solid #603009;
   border-radius: 30px;
   width: 100%;
   background: transparent;
 }
-.popup label:last-of-type {
+.popup label:last-of-type,
+.popup-big label:last-of-type {
   margin-bottom: 50px;
 }
-.popup .btn {
+.popup .btn,
+.popup-big .btn {
   width: 306px;
   margin-bottom: 20px;
 }
-
-.popup .btn-close {
+.popup .btn-close,
+.popup-big .btn-close {
   position: fixed;
   right: -68px;
   top: -79px;
@@ -1124,7 +1118,8 @@ body.with-popup::before {
   transition: transform 0.3s ease;
 }
 
-.popup .btn-close:hover {
+.popup .btn-close:hover,
+.popup-big .btn-close:hover {
   transform: rotate(90deg);
 }
 
@@ -1207,6 +1202,7 @@ body.with-popup::before {
   .page-piano .teachers .slick-next {
     left: calc(50% + 76px);
   }
+  .popup-big::before,
   .popup::before {
     background-size: cover;
     top: -5%;
@@ -1523,15 +1519,17 @@ body.with-popup::before {
   .page-piano .banner {
     background-position-y: 95%;
   }
-  .popup {
+  .popup,
+  .popup-big {
     padding: 40px;
     width: 90%;
     min-width: 320px;
   }
-  .popup::before {
+  /* .popup::before,
+  .popup-big::before {
     background-size: cover;
     right: -5%;
-  }
+  } */
 }
 
 /* Portrait phones and smaller */
