@@ -1143,7 +1143,8 @@ body.with-popup::before {
   margin-bottom: 10px;
 }
 
-.popup-big .radio-label {
+.popup-big .radio-label,
+.popup-big .radio-label:last-of-type {
   text-align: center;
   display: block;
   margin: 0;
