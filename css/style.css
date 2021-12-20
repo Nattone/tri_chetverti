@@ -835,23 +835,6 @@ section.container {
   top: 100%;
 }
 
-.popup .btn-close {
-  position: absolute;
-  right: -68px;
-  top: -79px;
-  width: 57px;
-  height: 57px;
-  background: url(../images/icon-close.svg);
-  border: none;
-  cursor: pointer;
-  transform: rotate(0);
-  transition: transform 0.3s ease;
-}
-
-.popup .btn-close:hover {
-  transform: rotate(90deg);
-}
-
 /* about-schools */
 
 .about-schools .cards {
@@ -1071,16 +1054,13 @@ body.with-popup::before {
   width: 80%;
   z-index: 5;
   display: none;
+  overflow: hidden;
+  padding: 90px 80px 100px;
 }
 .popup.open {
   display: block;
 }
-.popup-wrapper {
-  overflow: hidden;
-  padding: 90px 80px 100px;
-  position: relative;
-}
-.popup-wrapper::before {
+.popup::before {
   content: "";
   position: absolute;
   background-image: url(../images/form__decor.svg);
@@ -1126,6 +1106,23 @@ body.with-popup::before {
 .popup .btn {
   width: 306px;
   margin-bottom: 20px;
+}
+
+.popup .btn-close {
+  position: fixed;
+  right: -68px;
+  top: -79px;
+  width: 57px;
+  height: 57px;
+  background: url(../images/icon-close.svg);
+  border: none;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+}
+
+.popup .btn-close:hover {
+  transform: rotate(90deg);
 }
 
 /* adaptive  */
